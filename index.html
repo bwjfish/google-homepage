@@ -2,14 +2,39 @@
 <html>
     <head>
         <style>
+            .header-nav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            #about {
+                margin-right: 20px;
+                float: left;
+            }
+
+            #store {
+                float: left;
+            }
+
+            #gmail {
+                margin-left: 20px;
+                float: right;
+            }
+
+            #image {
+                float: right;
+            }
+
             .google-logo {
                 display: block;
                 margin: auto;
-                margin-top: 200px;
+                padding-top: 200px;
             }           
 
             .form-container {
                 margin-top: 50px;
+                margin-bottom: 200px;
                 text-align: center;
             }
 
@@ -23,10 +48,54 @@
             .search-button {
                 margin-right: 35px;
             }
+
+            .bottom-left-nav {
+                position: absolute;
+                left: 10px;
+                bottom: 10px;
+            }
+
+            #advertising {
+                margin-right: 20px;
+                float: left;
+            }
+
+            #business {
+                margin-right: 20px;
+                float: left;
+            }
+
+            .bottom-right-nav {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+
+            #privacy {
+                margin-left: 20px;
+                float: right;
+            }
+
+            #terms {
+                margin-left: 20px;
+                float: right;
+            }
+
+            #settings {
+                margin-left: 20px;
+                float: right;
+            }
             
         </style>
     </head>
     <body>
+        <ul class="header-nav">
+            <li><a id="about" href="">About</a></li>
+            <li><a id="store" href="">Store</a></li>
+            <li><a id="gmail" href="">Gmail</a></li>
+            <li><a id="image" href="">Images</a></li>
+        </ul>
+        
         <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
         <form class="form-container">
             <input class="text-input" type="text">
@@ -34,5 +103,19 @@
             <input class="search-button" type="submit" value="Google Search">
             <input class=lucky-button" type="submit" value="I'm Feeling Lucky">
         </form>
+        
+        <div class="bottom-left-nav">
+            <a id="advertising" href="">Advertising</a>
+            <a id="business" href="">Business</a>
+            <a href="">How Search works</a>
+        </div>
+
+        <div class="bottom-right-nav">
+            <a id="settings" href="">Settings</a>
+            <a id="terms" href="">Terms</a>
+            <a id="privacy" href="">Privacy</a>
+        </div>
+
+        
     </body>
 </html>
